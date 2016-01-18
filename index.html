@@ -70,16 +70,15 @@ function ajaxrequest(url,methodtype,parameter,callback,asynch){
     xmlhttp.send(parameter);
 }
 //参数
-function createjson(){
-    var json={id:0};
-    return json;
+function createParams(){
+    return '';//字符串
 }
 //成功的回调
 function callback(response){
     alert(&quot;&quot;);
 }
 //测试
-ajaxrequest(&quot;http://www.baidu.com&quot;,&quot;get&quot;,createjson(),callback,true);
+ajaxrequest(&quot;http://www.baidu.com&quot;,&quot;get&quot;,createParams(),callback,true);
 </code></pre><h3 id=-jquery-ajax->用jQuery编写一个ajax请求</h3><p>1）例子</p><pre><code>$.ajax({
     url: &#39;index.json&#39;,
     // dataType: &quot;json&quot;,
